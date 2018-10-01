@@ -1,4 +1,4 @@
-# Picture-Similarity: a picture similarity test project. Functions: uploading pictures,cutting out the items in the picture, and comparing the similarity of the pictures. 
+## Picture-Similarity: a picture similarity test project. Functions: uploading pictures,cutting out the items in the picture, and comparing the similarity of the pictures. 
 ## Project description：
   The application is a picture similarity test project based on the Java spring. It provides the following functions: uploading pictures, cutting out the items in the picture, and comparing the similarity of the pictures. The application creates a Restful API for image uploading based on the Java Spring, uses OpenCV for image processing, and combines two methods of image similarity testing to test the similarity of pictures (it can increase the accuracy of the test). The application does not use the database, uploaded pictures are stored directly on the file system.
 ## Environment：
