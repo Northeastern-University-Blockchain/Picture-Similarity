@@ -19,6 +19,9 @@ The result is like this:
   Upload pictures that you want to compare, thumbnails will be shown on the page.
 <div align=center><img width="300" height="240" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic5.png"/></div> 
 
+Cropped pictures will be stored directly on the file system.
+<div align=center><img width="300" height="240" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic7.png"/></div>
+
   Click the upload button, you will get the results.
 <div align=center><img width="500" height="200" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic6.png"/></div> 
     
