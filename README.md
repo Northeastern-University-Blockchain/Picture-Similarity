@@ -23,7 +23,7 @@ Cropped pictures will be stored directly on the file system.
 <div align=center><img width="380" height="240" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic7.png"/></div>
 
   Click the upload button, you will get the results.
-<div align=center><img width="500" height="200" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic6.png"/></div> 
+<div align=center><img width="540" height="120" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic10.png"/></div> 
     
 ## Notice:
   If you have already completed the above preparations, you can import the project with you IDE (my IDE is Eclipse). You can view the blog  and learn about the process of setting up the environment. The right environment for building a project will help you run the project   successfully.
