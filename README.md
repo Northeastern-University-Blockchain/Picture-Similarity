@@ -15,6 +15,14 @@
   You can open the project in Eclipse then run the SpringRestPicUpload-Similarity\src\main\webapp\uploadMultiple.jsp.
 The result is like this:
 
+      Picture-Similarity/img-folder/Pic1.png
+Upload pictures that you want to compare, thumbnails will be shown on the page.
+
+      Picture-Similarity/img-folder/Pic2.png
+Click the upload button, you will get the results.
+
+      Picture-Similarity/img-folder/Pic3.png
+    
 ## Notice:
   If you have already completed the above preparations, you can import the project with you IDE (my IDE is Eclipse). You can view the blog  and learn about the process of setting up the environment. The right environment for building a project will help you run the project   successfully.
   If you have any question, please send message to 15161183163@163.com. Good luck.
