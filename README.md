@@ -14,14 +14,13 @@
 ## How to run it：
   You can open the project in Eclipse then run the SpringRestPicUpload-Similarity\src\main\webapp\uploadMultiple.jsp.
 The result is like this:
+<div align=center><img width="784" height="443" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic1.png"/></div> 
 
-      Picture-Similarity/img-folder/Pic1.png
-Upload pictures that you want to compare, thumbnails will be shown on the page.
+  Upload pictures that you want to compare, thumbnails will be shown on the page.
+<div align=center><img width="784" height="443" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic2.png"/></div> 
 
-      Picture-Similarity/img-folder/Pic2.png
-Click the upload button, you will get the results.
-
-      Picture-Similarity/img-folder/Pic3.png
+  Click the upload button, you will get the results.
+<div align=center><img width="784" height="443" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic3.png"/></div> 
     
 ## Notice:
   If you have already completed the above preparations, you can import the project with you IDE (my IDE is Eclipse). You can view the blog  and learn about the process of setting up the environment. The right environment for building a project will help you run the project   successfully.
