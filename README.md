@@ -14,7 +14,7 @@
 ## How to run it：
   You can open the project in Eclipse then run the SpringRestPicUpload-Similarity\src\main\webapp\uploadMultiple.jsp.
 The result is like this:
-<div align=center><img width="380" height="300" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic12.png"/></div> 
+<div align=center><img width="380" height="250" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic12.png"/></div> 
 
   Upload pictures that you want to compare, thumbnails will be shown on the page.
 <div align=center><img width="380" height="360" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic13.png"/></div> 
