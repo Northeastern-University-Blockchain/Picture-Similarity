@@ -2,7 +2,7 @@
 ## Project description：
   The application is a picture similarity test project based on the Java spring. It provides the following functions: uploading pictures, cutting out the items in the picture, and comparing the similarity of the pictures. The application creates a Restful API for image uploading based on the Java Spring, uses OpenCV for image processing, and combines two methods of image similarity testing to test the similarity of pictures (it can increase the accuracy of the test). The application does not use the database, uploaded pictures are stored directly on the file system.
 ## Environment：
-  It runs atop a MSI laptop having an Intel Core i7 CPU at 2.70GHz and 8.00G of RAM, running 64-bit operating system.
+  It runs atop a laptop having an Intel Core i7 CPU at 2.70GHz and 8.00G of RAM, running 64-bit operating system.
 ## Version of the installation software：
   Eclipse 4.8.0 (Photon)    
   Tomcat 9.0   
