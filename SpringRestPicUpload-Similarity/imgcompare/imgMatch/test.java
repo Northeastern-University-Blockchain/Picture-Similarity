@@ -10,7 +10,7 @@ public class test
 	
 	static
 	{
-		//System.loadLibrary("callOpencvInCpp");//����C++��Opencv
+		//System.loadLibrary("callOpencvInCpp");
 		System.load("C:/Users/Administrator/Desktop/Pic/SpringRestPicUpload-Similarity/imgcompare/imgMatch/JNI_Opencv.dll");
 	}
 	
@@ -18,40 +18,41 @@ public class test
 	
 	public  String start(String strFileSrc,String strFileDes)
 	{
-		//System.loadLibrary(Core.NATIVE_LIBRARY_NAME);//ʹ��opencv����������
-		//ImageHistogram histogram = null;//���ڲ����ƶȵ�ֱ��ͼ
-		InputStream isSrc = null;//ԴͼƬ��Stream��
-		InputStream isDes = null;//Ҫ����ͼƬ��Stream��
+		//System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+		//ImageHistogram histogram = null;
+		InputStream isSrc = null;
+		InputStream isDes = null;
 		//String strFileSrc = "E:" + File.separator + "tmpFiles" + File.separator + "1";
 		//String strFileDes = "E:" + File.separator + "tmpFiles" + File.separator + "2";
-		final int des_width = 2400;//Ŀ���ļ��Ŀ�͸�
+		final int des_width = 2400;
 		final int des_hight = 3200;
 		//System.out.println("asdsdaddsdads");
 		try
 		{
-			//�������ж��ļ��Ƿ���ϱ�׼
+			
 			isSrc = new FileInputStream(strFileSrc);
 			isDes = new FileInputStream(strFileDes);
 			if (TestFile.getFileType(isSrc)&&TestFile.getFileType(isDes))
 			{
 				isSrc.close();
 				isDes.close();
-				//������֮�󣬵�֪�ļ����ͷ��ϣ�Ȼ������ж�
+				
 				test tes = new test();
 				System.out.println(strFileSrc);
 				System.out.println(strFileDes);
 		
-				//ɨ��Դ�ļ�������һ��
-				tes.scan(strFileSrc,"f:/img/dst_src.jpg",des_width,des_hight);
-				File fileSrc = new File("f:"+File.separator+"img"+File.separator+"dst_src.jpg");
-				//ɨ��Ŀ���ļ�������һ��
-				tes.scan(strFileDes,"f:/img/dst_des.jpg",des_width,des_hight);
-				File fileDes = new File("f:"+File.separator+"img"+File.separator+"dst_des.jpg");
 				
-				//�������ж��ļ��Ƿ���ڣ��о��Ƕ��һ�٣����Գ���ɾ��
+				tes.scan(strFileSrc,"e:/tmpFiles/dst_src.jpg",des_width,des_hight);
+				File fileSrc = new File("e:"+File.separator+"tmpFiles"+File.separator+"dst_src.jpg");
+			
+				//tes.scan(strFileDes,"f:/img/dst_des.jpg",des_width,des_hight);
+				//File fileDes = new File("f:"+File.separator+"img"+File.separator+"dst_des.jpg");
+				File fileDes = new File(strFileDes);
+
+
 				if (fileSrc.isFile() && fileDes.isFile())
 				{
-					//����PHash�ж�
+					//PHash
 					ImagePHash iph = new ImagePHash();
 					int dis = 0;
 					try
@@ -63,31 +64,31 @@ public class test
 						e.printStackTrace();
 					}
 					double phash = (1-dis/(64.0));
-					System.out.println("����ͼƬ��PHash���ƶ�Ϊ��" + phash);
+					System.out.println("PHash" + phash);
 					
 					ImageHistogram ih = new ImageHistogram();
 					double score = 0;
 					score = ih.match(fileSrc, fileDes);
-					System.out.println("����ͼƬ��Histogram���ƶ�Ϊ��"+score);
+					System.out.println("Histogram"+score);
 					
 					double result = 0;
 					if(phash >=0.95)
 						result = phash;
 					else
-						result = score*0.3 + phash*0.7;
+						result = score*0.5 + phash*0.5;
 					
-					System.out.println("�������ƶ�Ϊ��" + result);
-					return "similarity:" + result;
+					System.out.println("Similarity：" + result);
+					return "Similarity:" + result;
 				} else
 				{
-					System.out.println("�ļ������ڣ���������");
-					return "�ļ������ڣ���������";
+					System.out.println("File not exist！");
+					return "File not exist！";
 				}
 			}
 			else
 			{
-				System.out.println("�ļ���ʽ���󣡣�����");
-				return "�ļ���ʽ���󣡣�����";
+				System.out.println("File format error！");
+				return "File format error！";
 			}
 		} catch (IOException e)
 		{

@@ -25,52 +25,6 @@ public class FileUploadController {
 	private static final Logger logger = LoggerFactory.getLogger(FileUploadController.class);
 
 	/**
-	 * Upload single file using Spring Controller
-	 * 
-	 * @param rootPath
-	 *            file will be saved in local disk E
-	 * @param makes
-	 *            a directory "tmpfiles" in local disk E
-	 * @param name
-	 *            represented file name
-	 * @param file
-	 *            represented single file object
-	 * 
-	 */
-	@RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
-	public @ResponseBody String uploadFileHandler(@RequestParam("name") String name,
-			@RequestParam("file") MultipartFile file) {
-		//System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-		if (!file.isEmpty()) {
-			try {
-				byte[] bytes = file.getBytes();
-
-				// Creating the directory to store file
-				String rootPath = "e://";
-				File dir = new File(rootPath + File.separator + "tmpFiles");
-				if (!dir.exists())
-					dir.mkdirs();
-                 
-				// Create the file on server
-				File serverFile = new File(dir.getAbsolutePath() + File.separator + name);
-				BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(serverFile));
-				stream.write(bytes);
-				stream.close();
-           
-				logger.info("Server File Location=" + serverFile.getAbsolutePath());
-
-				return "You successfully uploaded file=" + name;
-			} catch (IOException IoException) {
-				return "You failed to upload " + name + " => " + IoException.getMessage();
-			}catch (Exception exception) {
-				return "You failed to upload " + name + " => " + exception.getMessage();
-			}
-		} else {
-			return "You failed to upload " + name + " because the file was empty.";
-		}
-	}
-
-	/**
 	 * Upload multiple file using Spring Controller
 	 * 
 	 * @param rootPath
@@ -98,7 +52,7 @@ public class FileUploadController {
 			MultipartFile file = files[i];
 			String name = names[i];
 			
-			//System.out.println("dq");
+			//System.out.println("1");
 			logger.info(files[i].getName());
 			
 			
@@ -130,7 +84,7 @@ public class FileUploadController {
 				return "You failed to upload " + name + " => " + exception.getMessage();
 			}
 		}
-	   //·µ»ØÖµ
+	   
 		message= message+startMatch.start(add[0],add[1]);
 		return message;
 	}

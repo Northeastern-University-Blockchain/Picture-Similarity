@@ -7,7 +7,7 @@ import java.net.URL;
 import javax.imageio.ImageIO;
 
 /**
- * @desc  ÏàËÆÍ¼Æ¬Ê¶±ğ£¨Ö±·½Í¼£©
+ * @desc ç›¸ä¼¼å›¾ç‰‡è¯†åˆ«ï¼ˆç›´æ–¹å›¾ï¼‰
  */
 public class ImageHistogram {
 
@@ -72,7 +72,7 @@ public class ImageHistogram {
 	 * Bhattacharyya Coefficient
 	 * http://www.cse.yorku.ca/~kosta/CompVis_Notes/bhattacharyya.pdf
 	 * 
-	 * @return	·µ»ØÖµ´óÓÚµÈÓÚ0.8¿ÉÒÔ¼òµ¥ÅĞ¶ÏÕâÁ½ÕÅÍ¼Æ¬ÄÚÈİÒ»ÖÂ
+	 * @return	è¿”å›å€¼å¤§äºç­‰äº0.8å¯ä»¥ç®€å•åˆ¤æ–­è¿™ä¸¤å¼ å›¾ç‰‡å†…å®¹ä¸€è‡´
 	 * @throws IOException 
 	 */
 	public double match(File srcFile, File canFile) throws IOException {
@@ -82,7 +82,7 @@ public class ImageHistogram {
 	}
 	
 	/**
-	 * @return	·µ»ØÖµ´óÓÚµÈÓÚ0.8¿ÉÒÔ¼òµ¥ÅĞ¶ÏÕâÁ½ÕÅÍ¼Æ¬ÄÚÈİÒ»ÖÂ
+	 * @return	è¿”å›å€¼å¤§äºç­‰äº0.8å¯ä»¥ç®€å•åˆ¤æ–­è¿™ä¸¤å¼ å›¾ç‰‡å†…å®¹ä¸€è‡´
 	 * @throws IOException
 	 */
 	public double match(URL srcUrl, URL canUrl) throws IOException {

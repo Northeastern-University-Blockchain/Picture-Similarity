@@ -48,7 +48,7 @@ function checkForm(){
  */
 function previewImage(file, url) {
 	var MAXWIDTH = 120;
-    var MAXHEIGHT = 120;
+    var MAXHEIGHT = 180;
     if (file.files && file.files[0]) {
         var img = document.getElementById(url);
         img.onload = function() {
@@ -105,20 +105,6 @@ function getImageSize(obj) {
     }
 };
 
-/**
- * 显示图片名
-
-var file1 = document.getElementById("file1"); 
-var file2 = document.getElementById("file2"); 
-
-var fileName1 = document.getElementById("fileName1");
-var fileName2 = document.getElementById("fileName2");   
-function handleFile()
-{           
- fileName1.value = file1.value; 
- fileName2.value = file2.value;      
-}
-*/
 
 </script>
 
@@ -160,8 +146,8 @@ function handleFile()
 	</form>
 	
 	
-	<img src="images/alum_def_img.jpg" name="img1" id="img1" width="100px;" height="100px;" align="center" style="margin-top: 5px; margin-bottom: 5px;"/>
-	<img src="images/alum_def_img.jpg" name="img2" id="img2" width="100px;" height="100px;" align="center" style="margin-top: 5px; margin-bottom: 5px;"/>
+	<img src="images/alum_def_img.jpg" name="img1" id="img1" width="120px;" height="180px;" align="center" style="margin-top: 5px; margin-bottom: 5px;"/>
+	<img src="images/alum_def_img.jpg" name="img2" id="img2" width="120px;" height="180px;" align="center" style="margin-top: 5px; margin-bottom: 5px;"/>
 	
 
 

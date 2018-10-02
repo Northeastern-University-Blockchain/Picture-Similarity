@@ -1,7 +1,6 @@
 package imgMatch;
 /*
- * ´æ·ÅÎÄ¼şÀàĞÍµÄÎÄ¼ş
- * Ã»¶¯£¬copy±ğÈËµÄÎÄ¼ş
+ * å­˜æ”¾æ–‡ä»¶ç±»å‹çš„æ–‡ä»¶
  */
 public enum FileType {
 

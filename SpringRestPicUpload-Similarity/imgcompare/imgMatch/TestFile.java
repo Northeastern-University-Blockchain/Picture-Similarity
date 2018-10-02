@@ -1,11 +1,5 @@
 package imgMatch;
-/*
- * 本文件是对文件类型进行检测
- * 符合的文件类型在 FileType.java 文件里面
- * copy的别人的代码
- * 输入： 文件的is流
- * 输出：true/false
- */
+
 import java.io.IOException;
 import java.io.InputStream;
 
