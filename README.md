@@ -14,12 +14,12 @@
 ## How to run it：
   You can open the project in Eclipse then run the SpringRestPicUpload-Similarity\src\main\webapp\uploadMultiple.jsp.
 The result is like this:
-<div align=center><img width="380" height="250" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic1.png"/></div> 
+<div align=center><img width="380" height="280" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic1.png"/></div> 
 
   Upload pictures that you want to compare, thumbnails will be shown on the page.
 <div align=center><img width="380" height="360" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic2.png"/></div> 
 
-Cropped picture and uploaded pictures will be stored directly on the file system.
+  Cropped picture and uploaded pictures will be stored directly on the file system.
 <div align=center><img width="380" height="240" src="https://github.com/Northeastern-University-Blockchain/Picture-Similarity/blob/master/img-folder/Pic4.png"/></div>
 
   Click the upload button, you will get the results.
