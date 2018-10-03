@@ -27,4 +27,5 @@ The result is like this:
     
 ## Notice:
   If you have already completed the above preparations, you can import the project with you IDE (my IDE is Eclipse). You can view the blog  and learn about the process of setting up the environment. The right environment for building a project will help you run the project   successfully.
-  If you have any question, please send message to 15161183163@163.com. Good luck.
+  If you have any question, please send message to neublockchain@163.com. Good luck.
+  CSDN blog about this project: https://blog.csdn.net/qq_34498413/article/details/82924968 (chinese), it can help you to build this project quickly.
